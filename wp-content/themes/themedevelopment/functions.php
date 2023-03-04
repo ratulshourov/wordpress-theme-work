@@ -13,6 +13,9 @@ wp_enqueue_style('bootstrap');
 wp_enqueue_style('custom');
 //main jquery add
 wp_enqueue_script('jquery');
+
+//custom jquery add
+wp_enqueue_script('custom',get_template_directory().'/js/custom.js',array(),'1.0.0',true);
 }
 add_action('wp_enqueue_scripts','add_css_js_calling');
 ?>
