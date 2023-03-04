@@ -13,7 +13,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                   <img src="<?php echo get_bloginfo( 'template_directory' );?>/img/logo.png"/>
+                   <img src="<?php echo get_theme_mod('ratul_theme_logo');?>"/>
+
                 </div>
                 <div class="col-md-9"></div>
             </div>

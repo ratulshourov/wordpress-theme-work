@@ -1,7 +1,12 @@
+/*
+header css changes
+*/
 #header_area{
     padding: 15px;
 }
-
+/*
+common css for all image
+*/
 img{
     max-width: 100%;
 }
