@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 add_theme_support('title-tag');
 
@@ -7,6 +7,10 @@ add_theme_support('title-tag');
 
 function add_css_js_calling() {
 wp_enqueue_style('main-style',get_stylesheet_uri());
+wp_register_style('bootstrap',get_stylesheet_uri().'/css/boostrap.css',array(),'4.0.0','all');
+wp_register_style('custom',get_stylesheet_uri().'/css/custom.css',array(),'1.0.0','all');
+wp_enqueue_style('bootstrap');
+wp_enqueue_style('custom');
 }
 add_action('wp_enqueue_scripts','add_css_js_calling');
 ?>
