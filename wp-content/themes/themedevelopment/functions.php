@@ -11,6 +11,8 @@ wp_register_style('bootstrap',get_stylesheet_uri().'/css/boostrap.css',array(),'
 wp_register_style('custom',get_stylesheet_uri().'/css/custom.css',array(),'1.0.0','all');
 wp_enqueue_style('bootstrap');
 wp_enqueue_style('custom');
+//main jquery add
+wp_enqueue_script('jquery');
 }
 add_action('wp_enqueue_scripts','add_css_js_calling');
 ?>
