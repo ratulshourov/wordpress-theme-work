@@ -39,7 +39,7 @@ function theme_customization($wp_customize) {
 }
 add_action('customize_register','theme_customization');
 
-
+register_nav_menu('nav-menu', 'Ratul')
 
 
 
