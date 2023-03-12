@@ -36,6 +36,29 @@ function theme_customization($wp_customize) {
         'section' =>'ratul_theme_area'
     )));
 
+    //Menu Position 
+
+    $wp_customize->add_section('menu_position',array(
+        'title'=>__('Menu Position Option','Ratul'),
+        'description'=>'If you are interested menu position'
+    ));
+    $wp_customize->add_setting('menu_position',array(
+        'default'=>'right_menu',
+    ));
+
+    $wp_customize->add_control('menu_position',array(
+        'label'=>'Menu Position',
+        'description'=>'Select Your Menu Position',
+        'setting'=>'menu_position',
+        'section'=>'menu_position',
+        'type'=>'radio',
+        'choices'=>array(
+            'left_menu'=>'Left Menu',
+            'right_menu'=>'Right Menu',
+            'center_menu'=>'Center Menu',
+        )
+    ));
+
 }
 add_action('customize_register','theme_customization');
 

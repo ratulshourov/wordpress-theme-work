@@ -1,9 +1,14 @@
 /*
 header css changes
 */
-#header_area{
-  
+#header_area.left_menu.col-md-3{
+  order: 1;
 }
+#header_area.right_menu.col-md-3{
+  order: 2;
+}
+
+
 /*
 common css for all image
 */

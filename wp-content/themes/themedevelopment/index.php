@@ -11,11 +11,18 @@
 </head>
 
 <body class="<?php body_class(); ?>">
-    <div id="header_area">
+    <div id="header_area" class="<?php echo get_theme_mod('menu_position'); ?>">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <?php wp_nav_menu(array('theme_location'=>'nav-menu','menu_id'=>'nav'))?>
+                <!-- <div class="col-md-3">
+                    <img id="logo" src="<?php echo get_theme_mod('ratul_theme_logo'); ?>" />
+                </div> -->
+                <div class="col-md-9">
+                    <?php wp_nav_menu(array('theme_location' => 'nav-menu', 'menu_id' => 'nav')) ?>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-3">
                     <img id="logo" src="<?php echo get_theme_mod('ratul_theme_logo'); ?>" />
                 </div>
             </div>
